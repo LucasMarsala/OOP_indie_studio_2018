@@ -1,15 +1,17 @@
 cmake_minimum_required(VERSION 3.11)
 
+project(bomberman)
+
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/Irrlicht" ${CMAKE_MODULE_PATH})
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR})
 set(IRRLICHT_LIBRARY "${PROJECT_SOURCE_DIR}/Irrlicht/Irrlicht.lib" ${IRRLICHT_LIBRARY})
-set(CMAKE_EXE_LINKER_FLAGS "-W -Wall -Wextra -lIrrlicht -lsfml-audio -lsfml-system")
+set(CMAKE_EXE_LINKER_FLAGS "-W -Wall -Wextra -lIrrlicht -lsfml-system -lsfml-audio")
 set(SFML_LIBRARY_AUDIO "${PROJECT_SOURCE_DIR}/SFML/lib/sfml-audio.lib" ${SFML_LIBRARY_AUDIO})
 set(SFML_LIBRARY_SYSTEM "${PROJECT_SOURCE_DIR}/SFML/lib/sfml-system.lib" ${SFML_LIBRARY_SYSTEM})
 set(SFML_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/SFML/include" ${SFML_INCLUDE_DIR})
 
-add_executable(bomberman main.cpp 
-                src/Map/Map.cpp src/Map/Map.hpp 
+add_executable(bomberman main.cpp
+                src/Map/Map.cpp src/Map/Map.hpp
                 src/Blocks/ABlock.cpp src/Blocks/ABlock.hpp
                 src/Integration/Integration.hpp
         src/GUI/EventReceiver.cpp src/GUI/EventReceiver.hpp

@@ -5,6 +5,7 @@
 #include "Bomb.hpp"
 #include <iostream>
 #include "../Blocks/ABlock.hpp"
+#include <SFML/Audio.hpp>
 
 using namespace irr;
 

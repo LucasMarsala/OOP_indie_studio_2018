@@ -8,6 +8,7 @@
 #include "../Integration/Integration.hpp"
 #include "../Exception/Error.hpp"
 #include <vector>
+#include <SFML/Audio.hpp>
 
 using namespace irr;
 
