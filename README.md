@@ -8,9 +8,9 @@ Last project of the second year at Epitech. The aim of the project was to create
 ## On Windows
 
 ```
-  Double click on setup.exe
+  $ Double click on setup.exe
   # It will install all the dependencies and packages to run the application.
-  # After the installation, you search on Windows with your navigation bar the application named bomberman.
+  # Then, you can search on Windows an application named bomberman.
   # Next enjoy the game !
 ```
 
