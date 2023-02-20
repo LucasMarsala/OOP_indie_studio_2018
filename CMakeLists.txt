@@ -6,9 +6,9 @@ set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/Irrlicht" ${CMAKE_MODULE_PATH})
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR})
 set(IRRLICHT_LIBRARY "${PROJECT_SOURCE_DIR}/Irrlicht/Irrlicht.lib" ${IRRLICHT_LIBRARY})
 set(CMAKE_EXE_LINKER_FLAGS "-W -Wall -Wextra -lIrrlicht -lsfml-system -lsfml-audio")
-set(SFML_LIBRARY_AUDIO "${PROJECT_SOURCE_DIR}/SFML/lib/sfml-audio.lib" ${SFML_LIBRARY_AUDIO})
-set(SFML_LIBRARY_SYSTEM "${PROJECT_SOURCE_DIR}/SFML/lib/sfml-system.lib" ${SFML_LIBRARY_SYSTEM})
-set(SFML_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/SFML/include" ${SFML_INCLUDE_DIR})
+#set(SFML_LIBRARY_AUDIO "${PROJECT_SOURCE_DIR}/SFML/lib/sfml-audio.lib" ${SFML_LIBRARY_AUDIO})
+#set(SFML_LIBRARY_SYSTEM "${PROJECT_SOURCE_DIR}/SFML/lib/sfml-system.lib" ${SFML_LIBRARY_SYSTEM})
+#set(SFML_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/SFML/include" ${SFML_INCLUDE_DIR})
 
 add_executable(bomberman main.cpp
                 src/Map/Map.cpp src/Map/Map.hpp
@@ -41,7 +41,7 @@ add_executable(bomberman main.cpp
 
 find_package(Irrlicht REQUIRED)
 target_link_libraries(bomberman ${IRRLICHT_LIBRARY})
-target_link_libraries(bomberman ${SFML_LIBRARY_AUDIO})
-target_link_libraries(bomberman ${SFML_LIBRARY_SYSTEM})
+#target_link_libraries(bomberman ${SFML_LIBRARY_AUDIO})
+#target_link_libraries(bomberman ${SFML_LIBRARY_SYSTEM})
 target_include_directories(bomberman PRIVATE ${IRRLICHT_INCLUDE_DIR})
-target_include_directories(bomberman PRIVATE ${SFML_INCLUDE_DIR})
+#target_include_directories(bomberman PRIVATE ${SFML_INCLUDE_DIR})

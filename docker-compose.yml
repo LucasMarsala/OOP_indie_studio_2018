@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  game:
+    build: .
+    container_name: bomberman
+    privileged: true
+    environment:
+      DISPLAY: $DISPLAY
+    network_mode:
+      host
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
