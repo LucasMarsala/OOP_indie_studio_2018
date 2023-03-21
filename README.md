@@ -3,6 +3,10 @@
 
 Last project of the second year at Epitech. The aim of the project was to create a bomberman game using libirrlicht & libsfml.
 
+
+![Screenshot_2023-03-21_10-54-13](https://user-images.githubusercontent.com/39527261/226572038-031fd963-3833-4091-b11f-815d63c6bc04.png)
+![Screenshot_2023-03-21_10-54-43](https://user-images.githubusercontent.com/39527261/226572050-b5691eaa-2535-4c6d-9a1a-61fb5209f8f6.png)
+
 ## Prerequisite
 
   Docker version 20.10 and docker-compose version 1.29.2 or g++ version 12.2.0 and make version 4.3 or libsfml version 2.5 and libirrlicht version 1.8.
